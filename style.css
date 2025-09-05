@@ -1,0 +1,161 @@
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+/* Ссылки */
+a {
+    text-decoration: none;
+    color: rgb(13, 186, 216);
+}
+/* Списки */
+ul {
+    text-align: left;
+    list-style-type: circle;
+    padding-left: 700px;
+    color:#000000;
+}
+/* Таблица  */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #346072
+}
+/* Форма для контакта */
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #02c99e;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(138, 246, 250);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Навигация */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #346072;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+}
+/* Подвал*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #29b3b3;
+    color: white
+}
+/* Шапка*/
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #29b3b3;
+}
+/* Основной текст*/
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #d4ffff
+}
+/* флекс контейнер*/
+.flex-item {
+    background-color: #29b3b3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.text-item {
+    background-color: #29b3b3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Кнопка наверх*/
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    background-color: #29b3b3;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 15px;
+}
+/* Анимация*/
+.animation{
+    width: 600px;
+    height: 900px;
+    position: relative;
+    animation: mymove 2s infinite;
+    animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 490px;}
+}
