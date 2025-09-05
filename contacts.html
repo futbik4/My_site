@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Фавикон -->
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=3IzQhyHba0Dz&format=png&color=000000"
+        type="image/x-icon">
+    <style>
+        /*<-------------------------Внутренний стиль------------------------->*/
+        h1 {
+            color: navy;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="страница контактов для обратной связи.">
+    <meta name="keywords" content="контакты, обратная связь, форма">
+    <title>Написать мне</title>
+</head>
+
+<body>
+    <!-- Навигация по 3 страницам -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="interests.html">Увлечения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Заголовок -->
+    <main>
+        <h1>Написать мне</h1>
+        <!-- Форма обратной связи -->
+        <form action="mailto:kartasoviluha@gmail.com" method="post" enctype="multipart/form-data">
+            <label for="name">Имя отправителя:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Почтовый ящик отправителя:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Номер телефона:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[+]?[0-9]{10,15}" placeholder="Укажите в формате +7..."
+                required><br><br>
+            <label>Как обращаться к вам в дальнейшем:</label><br>
+            <input type="radio" id="sir" name="salutation" value="Уважаемый" checked>
+            <label for="sir">Уважаемый</label><br>
+            <input type="radio" id="madam" name="salutation" value="Уважаемая">
+            <label for="madam">Уважаемая</label><br><br>
+            <label for="topic">Тематике письма:</label><br>
+            <select id="topic" name="topic">
+                <option value="Жалоба">Жалоба</option>
+                <option value="Предложения">Предложения</option>
+                <option value="Дружба">Дружба</option>
+                <option value="Совместный проект">Совместный проект</option>
+            </select><br><br>
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <label for="file">Прикрепить файл:</label><br>
+            <input type="file" id="file" name="file"><br><br>
+            <label for="consent">Согласие на обработку персональных данных:</label>
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Согласен</label><br><br>
+            <button type="submit">Отправить письмо</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 Все права защищены лично мной!</p>
+    </footer>
+</body>
+
+</html>
