@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Фавикон -->
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=3IzQhyHba0Dz&format=png&color=000000" type="image/x-icon">
+    <style>
+        /*<-------------------------Внутренний стиль------------------------->*/
+        h1 {
+            color: navy;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="мои увлечения, достижения, хобби, интересы.">
+    <meta name="keywords" content="увлечения, хобби, интересы, достижения, музыка, фильмы">
+    <meta name="author" content="Карташов Илья Сергеевич">
+    <title>Моя визитная карточка </title>
+</head>
+
+<body>
+    <!-- Навигация по 3 страницам -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="interests.html">Увлечения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Шапка страницы -->
+    <main>
+        <h1>Мои увлечения</h1>
+        <ul>
+            <li>
+                <p><strong>Играю в Футбол</strong></p>
+            </li>
+            <li>
+                <p><strong>Играю на гитаре</strong></p>
+            </li>
+            <li>
+                <p><strong>Катаюсь на коньках</strong></p>
+            </li>
+            <li>
+                <p><strong>Регулярные тренировки в спортзале</strong></p>
+            </li>
+            <li>
+                <p><strong>Являюсь <cite>"Культоргом"</cite> МГТУ</strong></p>
+            </li>
+        </ul>
+        <!-- Таблица с информацией -->
+        <table>
+            <tr>
+                <th colspan="2">Мои увлечения</th>
+            </tr>
+            <tr>
+                <td>Увлечение</td>
+                <td>Длительность</td>
+            </tr>
+            <tr>
+                <td>Футбол</td>
+                <td>5 лет</td>
+            </tr>
+            <tr>
+                <td>Гитара</td>
+                <td>2 года</td>
+            </tr>
+            <tr>
+                <td>Катание на коньках</td>
+                <td>4 года</td>
+            </tr>
+            <tr>
+                <td>Тренировки в спортзале</td>
+                <td>1 год</td>
+            </tr>
+            <tr>
+                <td>Культорг в МГТУ</td>
+                <td rowspan="2">2 месяца</td>
+            </tr>
+            <tr>
+                <td>Катание на сноуборде</td>
+            </tr>
+        </table>
+        <h2> Что я умею?</h2>
+        <!-- 2 Стиль -->
+        <div class="flex-container-1" style=" display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div class="flex-item">
+                <p>Делаю заднее сальто</p>
+                <video width="300" height="300" controls autoplay loop muted>
+                    <source src="Images/IMG_2074.MOV" type="video/mp4">
+                </video>
+            </div>
+            <div class="flex-item">
+                <p>Катаюсь на коньках</p>
+                <img src="https://media.tenor.com/lHKVAKXBf_cAAAAM/ice-skating-failarmy.gif" width="262" height="300" alt="катание на коньках" loading="lazy">
+            </div>
+            <div class="flex-item">
+                <p>Играю на гитаре</p>
+                <img src="https://media.tenor.com/mRz7Tl7_Es8AAAAj/guitar-playing-guitar.gif" width="300" height="300" alt="игра на гитаре">
+            </div>
+        </div>
+        <h2>Моя любимая музыка</h2>
+        <!-- Файл с музыкой -->
+        <audio controls muted>
+            <source src="Images/Beau_Young_Prince_-_Let_Go_60971399.mp3" type="audio/mp3" >
+        </audio>
+        <p><strong>Исполнители, которые мне нравятся</strong></p>
+        <ul>
+            <li>
+                <p>Big Baby Tape</p>
+            </li>
+            <li>
+                <p>Yeat</p>
+            </li>
+            <li>
+                <p>Yanix</p>
+            </li>
+        </ul>
+        <!-- Отрывок фильма -->
+        <h2>Любимый отрывок из фильма</h2>
+        <iframe src="https://vk.com/video_ext.php?oid=-15090835&id=456239457&hd=2&autoplay=1" width="853" height="480"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+            allowfullscreen></iframe>
+    </main>
+    <footer>
+        <p>© 2025 Все права защищены лично мной!</p>
+    </footer>
+    <button id="toTopBtn">Наверх</button>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("toTopBtn").style.display = "block";
+        } else {
+            document.getElementById("toTopBtn").style.display = "none";
+        }
+    }
+
+    document.getElementById("toTopBtn").onclick = function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+
+</html>
