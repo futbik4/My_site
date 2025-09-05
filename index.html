@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Фавикон -->
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=3IzQhyHba0Dz&format=png&color=000000" type="image/x-icon">
+    <style>
+        /*<-------------------------Внутренний стиль------------------------->*/
+        h1 {
+            color: navy;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="личная страница с информацией о студенте">
+    <meta name="author" content="Карташов Илья Сергеевич">
+    <meta name="keywords" content="ФИО, направление подготовки, профиль, контакты">
+    <!-- Шапка страницы -->
+    <title>Моя визитная карточка </title>
+</head>
+
+<body>
+    <!-- Навигация по 3 страницам -->
+    <header id="main-header">
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="interests.html">Увлечения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Информация обо мне -->
+    <main id="main-content">
+        <h1 id="main-title">Моя визитная карточка</h1>
+        <h2 id="info-heading">Основная информация</h2>
+        <div class="flex-container-2" style=" display: flex; justify-content: space-around; gap: 10px;">
+            <div class="text-item" id="fio-container">
+                <p><strong>ФИО:</strong> Карташов Илья Сергеевич</p>
+            </div>
+            <div class="text-item" id="direction-container">
+                <p><strong>Направление подготовки: </strong>"Управление проектами разработки бизнес-приложений для цифровой
+                    экономики"</p>
+            </div>
+            <div class="text-item" id="profile-container">
+                <p><strong>Профиль: </strong>Прикладная информатика</p>
+            </div>
+            <div class="text-item" id="birthdate-container">
+                <p><strong>Дата рождения: </strong>04.07.2006</p>
+            </div>
+        </div>
+        <!-- Фотография -->
+        <p><strong>Фотография:</strong>
+        <div class="animation" id="photo-container">
+        <img src="Images/photo_2024-11-18_15-22-30.jpg" width="600" height="900" alt="Илья" id="my-photo">
+        </div>
+        <p><strong>Название школы(которую закончил): </strong></p><a href="https://sch8mgn.ru/" id="school-link">МОУ СОШ №8</a>
+        <p><strong>Город рождения: </strong>Магнитогорск</p>
+        <p><strong>Телефон: </strong>+7(906) 899 73-32</p>
+        <p><strong>Почта(Gmail): </strong>kartasoviluha@gmail.com</p>
+        <p><strong>Ссылка на VK:</strong></p><a href=https://vk.com/futbik4>Карташов Илья</a><br>
+    </main>
+    <footer id="main-footer">
+        <p>© 2025 Все права защищены лично мной!</p>
+    </footer>
+</body>
+
+</html>
